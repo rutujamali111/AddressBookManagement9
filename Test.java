@@ -5,6 +5,7 @@ public class Test {
 		// TODO Auto-generated method stub
 		AddressBook book1=new AddressBook();
 		book1.add();
+		book1.edit();
 
 	}
 
