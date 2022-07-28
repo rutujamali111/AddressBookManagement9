@@ -76,7 +76,22 @@ public class AddressBook {
 
 			}
 		}
+		System.out.println("contact Edited");
 
+	}
+	public void delete() {
+		System.out.println("Enter your First name:");
+		String fname = s.next();
+
+		Iterator<Contacts> iterator = list.listIterator();
+		while (iterator.hasNext()) {
+			Contacts person = iterator.next();
+
+			if (fname.equals(person.getFname())) {
+				list.remove(person);
+			}
+		}
+		System.out.println("contact deleted");
 	}
 		
 
